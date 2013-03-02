@@ -1,4 +1,4 @@
-HELLWIGS
+hellwigs
 ========
 
 Simple, but yet powerful CSS code for setting up fluid layouts.
