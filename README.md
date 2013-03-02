@@ -1,4 +1,12 @@
-hellwixx
+HELLWIGS
 ========
 
-Simple CSS code for setting up fluid layouts. Also usable for quick prototyping.
+Simple, but yet powerful CSS code for setting up fluid layouts.
+
+Also usable for quick prototyping.
+
+## Author
+
+Mario Hofer, knsqnt interactive, email@knsqnt.com, www.knsqnt.com
+
+Special thanks to Dennis Hellwig (https://www.xing.com/profile/Dennis_Hellwig)

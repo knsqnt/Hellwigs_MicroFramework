@@ -1,0 +1,225 @@
+/**************************************************************************************************
+ * HELLWIGS
+ * ------------------------------------------------------------------------------------------------
+ * No restrictions. Use as you want.
+ * ------------------------------------------------------------------------------------------------
+ * Author: Mario Hofer, knsqnt interactive, email@knsqnt.com, www.knsqnt.com
+ * Special thanks to Dennis Hellwig (https://www.xing.com/profile/Dennis_Hellwig)
+ **************************************************************************************************/
+
+/* ------------------------------------------------------------------------------------------------
+ * MIXINS
+ * ------------------------------------------------------------------------------------------------
+ */
+
+.border-box {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+} // .border-box
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.clearfix {
+    *zoom: 1;
+    
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+        line-height: 0;
+    } // &:before, &:after
+    
+    &:after {
+        clear: both;
+    } // &:after
+    
+} // .clearfix, .cf
+
+/* ------------------------------------------------------------------------------------------------
+ * GRIDSYSTEM
+ * ------------------------------------------------------------------------------------------------
+ * uo = unit offset, us = unit size
+ * ------------------------------------------------------------------------------------------------
+ */
+
+.units {
+    padding: 20px;
+    .border-box();
+    .clearfix();
+} // .units
+
+.unit {
+    display: block;
+    float: left;
+    padding: 0 10px 10px 10px;
+    width: 100%;
+    .border-box();
+} // .unit
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.uo1of2 { margin-left: 50%; }
+.uo1of3 { margin-left: 33.333333333%; }
+.uo2of3 { margin-left: 66.666666667%; }
+.uo1of4 { margin-left: 25%; }
+.uo3of4 { margin-left: 75%; }
+.uo1of5 { margin-left: 20%; }
+.uo2of5 { margin-left: 40%; }
+.uo3of5 { margin-left: 60%; }
+.uo4of5 { margin-left: 80%; }
+.uo1of6 { margin-left: 16.666666667%; }
+.uo5of6 { margin-left: 83.333333333%; }
+.uo1of8 { margin-left: 12.5%; }
+.uo3of8 { margin-left: 37.5%; }
+.uo5of8 { margin-left: 62.5%; }
+.uo7of8 { margin-left: 87.5%; }
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.us1of1 { float: none; }
+.us1of2 { width: 50%; }
+.us1of3 { width: 33.333333333%; }
+.us2of3 { width: 66.666666667%; }
+.us1of4 { width: 25%; }
+.us3of4 { width: 75%; }
+.us1of5 { width: 20%; }
+.us2of5 { width: 40%; }
+.us3of5 { width: 60%; }
+.us4of5 { width: 80%; }
+.us1of6 { width: 16.666666667; }
+.us5of6 { width: 83.333333333; }
+.us1of8 { width: 12.5%; }
+.us3of8 { width: 37.5%; }
+.us5of8 { width: 62.5%; }
+.us7of8 { width: 87.5%; }
+
+/* ---------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 759px) {
+
+.unit {
+    float: none !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+} // .unit
+
+} // @media screen and (max-width: 759px)
+
+/* ------------------------------------------------------------------------------------------------
+ * SPACING
+ * ------------------------------------------------------------------------------------------------
+ * m = margin, p = padding
+ * a = all, h = horizontal, v = vertical, t = top, r = right, b = bottom, l = left
+ * n = none, s = small, m = medium, l = large, h = huge
+ * ------------------------------------------------------------------------------------------------
+ */
+
+@none:    0px;
+@small:   5px;
+@medium: 10px;
+@large:  20px;
+@huge:   30px;
+
+.man { margin:        @none; }
+.mhn { margin-right:  @none;
+       margin-left:   @none; }
+.mvn { margin-top:    @none;
+       margin-bottom: @none; }
+.mtn { margin-top:    @none; }
+.mbn { margin-bottom: @none; }
+.mrn { margin-right:  @none; }
+.mbn { margin-bottom: @none; }
+.mln { margin-left:   @none; }
+
+.mas { margin:        @small; }
+.mhs { margin-right:  @small;
+       margin-left:   @small; }
+.mvs { margin-top:    @small;
+       margin-bottom: @small; }
+.mts { margin-top:    @small; }
+.mbs { margin-bottom: @small; }
+.mls { margin-left:   @small; }
+.mrs { margin-right:  @small; }
+
+.mam { margin:        @medium; }
+.mhm { margin-right:  @medium;
+       margin-left:   @medium; }
+.mvm { margin-top:    @medium;
+       margin-bottom: @medium; }
+.mtm { margin-top:    @medium; }
+.mrm { margin-right:  @medium; }
+.mbm { margin-bottom: @medium; }
+.mlm { margin-left:   @medium; }
+
+.mal { margin:        @large; }
+.mhl { margin-right:  @large;
+       margin-left:   @large; }
+.mvl { margin-top:    @large;
+       margin-bottom: @large; }
+.mtl { margin-top:    @large; }
+.mrl { margin-right:  @large; }
+.mbl { margin-bottom: @large; }
+.mll { margin-left:   @large; }
+
+.mah { margin:        @huge; }
+.mhh { margin-right:  @huge;
+       margin-left:   @huge; }
+.mvh { margin-top:    @huge;
+       margin-bottom: @huge; }
+.mth { margin-top:    @huge; }
+.mrh { margin-right:  @huge; }
+.mbh { margin-bottom: @huge; }
+.mlh { margin-left:   @huge; }
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.pan { padding:        @none; }
+.phn { padding-right:  @none;
+       padding-left:   @none; }
+.pvn { padding-top:    @none;
+       padding-bottom: @none; }
+.ptn { padding-top:    @none; }
+.prn { padding-right:  @none; }
+.pbn { padding-bottom: @none; }
+.pln { padding-left:   @none; }
+
+.pas { padding:        @small; }
+.phs { padding-right:  @small;
+       padding-left:   @small; }
+.pvs { padding-top:    @small;
+       padding-bottom: @small; }
+.pts { padding-top:    @small; }
+.prs { padding-right:  @small; }
+.pbs { padding-bottom: @small; }
+.pls { padding-left:   @small; }
+
+.pam { padding:        @medium; }
+.phm { padding-right:  @medium;
+       padding-left:   @medium; }
+.pvm { padding-top:    @medium;
+       padding-bottom: @medium; }
+.ptm { padding-top:    @medium; }
+.prm { padding-right:  @medium; }
+.pbm { padding-bottom: @medium; }
+.plm { padding-left:   @medium; }
+
+.pal { padding:        @large; }
+.phl { padding-right:  @large;
+       padding-left:   @large; }
+.pvl { padding-top:    @large;
+       padding-bottom: @large; }
+.ptl { padding-top:    @large; }
+.prl { padding-right:  @large; }
+.pbl { padding-bottom: @large; }
+.pll { padding-left:   @large; }
+
+.pah { padding:        @huge; }
+.phh { padding-right:  @huge;
+       padding-left:   @huge; }
+.pvh { padding-top:    @huge;
+       padding-bottom: @huge; }
+.pth { padding-top:    @huge; }
+.prh { padding-right:  @huge; }
+.pbh { padding-bottom: @huge; }
+.plh { padding-left:   @huge; }
