@@ -101,105 +101,84 @@
  * ------------------------------------------------------------------------------------------------
  */
 
-.man { margin:         0; }
-.mhn { margin-right:   0;
-       margin-left:    0; }
-.mvn { margin-top:     0;
-       margin-bottom:  0; }
-.mtn { margin-top:     0; }
-.mbn { margin-bottom:  0; }
-.mrn { margin-right:   0; }
-.mbn { margin-bottom:  0; }
-.mln { margin-left:    0; }
+/* ---------------------------------------------------------------------------------------------- */
 
-.mas { margin:         5px; }
-.mhs { margin-right:   5px;
-       margin-left:    5px; }
-.mvs { margin-top:     5px;
-       margin-bottom:  5px; }
-.mts { margin-top:     5px; }
-.mbs { margin-bottom:  5px; }
-.mls { margin-left:    5px; }
-.mrs { margin-right:   5px; }
-
-.mam { margin:        10px; }
-.mhm { margin-right:  10px;
-       margin-left:   10px; }
-.mvm { margin-top:    10px;
-       margin-bottom: 10px; }
-.mtm { margin-top:    10px; }
-.mrm { margin-right:  10px; }
-.mbm { margin-bottom: 10px; }
-.mlm { margin-left:   10px; }
-
-.mal { margin:        20px; }
-.mhl { margin-right:  20px;
-       margin-left:   20px; }
-.mvl { margin-top:    20px;
-       margin-bottom: 20px; }
-.mtl { margin-top:    20px; }
-.mrl { margin-right:  20px; }
-.mbl { margin-bottom: 20px; }
-.mll { margin-left:   20px; }
-
-.mah { margin:        30px; }
-.mhh { margin-right:  30px;
-       margin-left:   30px; }
-.mvh { margin-top:    30px;
-       margin-bottom: 30px; }
-.mth { margin-top:    30px; }
-.mrh { margin-right:  30px; }
-.mbh { margin-bottom: 30px; }
-.mlh { margin-left:   30px; }
+.mtn, .mvn, .man { margin-top:    0; }
+.mrn, .mhn, .man { margin-right:  0; }
+.mbn, .mvn, .man { margin-bottom: 0; }
+.mln, .mhn, .man { margin-left:   0; }
 
 /* ---------------------------------------------------------------------------------------------- */
 
-.pan { padding:         0; }
-.phn { padding-right:   0;
-       padding-left:    0; }
-.pvn { padding-top:     0;
-       padding-bottom:  0; }
-.ptn { padding-top:     0; }
-.prn { padding-right:   0; }
-.pbn { padding-bottom:  0; }
-.pln { padding-left:    0; }
+.mts, .mvs, .mas { margin-top:     5px; }
+.mbs, .mhs, .mas { margin-bottom:  5px; }
+.mls, .mvs, .mas { margin-left:    5px; }
+.mrs, .mhs, .mas { margin-right:   5px; }
 
-.pas { padding:         5px; }
-.phs { padding-right:   5px;
-       padding-left:    5px; }
-.pvs { padding-top:     5px;
-       padding-bottom:  5px; }
-.pts { padding-top:     5px; }
-.prs { padding-right:   5px; }
-.pbs { padding-bottom:  5px; }
-.pls { padding-left:    5px; }
+.mtm, .mvm, .mam { margin-top:    10px; }
+.mrm, .mhm, .mam { margin-right:  10px; }
+.mbm, .mvm, .mam { margin-bottom: 10px; }
+.mlm, .mhm, .mam { margin-left:   10px; }
 
-.pam { padding:        10px; }
-.phm { padding-right:  10px;
-       padding-left:   10px; }
-.pvm { padding-top:    10px;
-       padding-bottom: 10px; }
-.ptm { padding-top:    10px; }
-.prm { padding-right:  10px; }
-.pbm { padding-bottom: 10px; }
-.plm { padding-left:   10px; }
+.mtl, .mvl, .mal { margin-top:    20px; }
+.mrl, .mhl, .mal { margin-right:  20px; }
+.mbl, .mvl, .mal { margin-bottom: 20px; }
+.mll, .mhl, .mal { margin-left:   20px; }
 
-.pal { padding:        20px; }
-.phl { padding-right:  20px;
-       padding-left:   20px; }
-.pvl { padding-top:    20px;
-       padding-bottom: 20px; }
-.ptl { padding-top:    20px; }
-.prl { padding-right:  20px; }
-.pbl { padding-bottom: 20px; }
-.pll { padding-left:   20px; }
+.mth, .mvh, .mah { margin-top:    30px; }
+.mrh, .mhh, .mah { margin-right:  30px; }
+.mbh, .mvh, .mah { margin-bottom: 30px; }
+.mlh, .mhh, .mah { margin-left:   30px; }
 
-.pah { padding:        30px; }
-.phh { padding-right:  30px;
-       padding-left:   30px; }
-.pvh { padding-top:    30px;
-       padding-bottom: 30px; }
-.pth { padding-top:    30px; }
-.prh { padding-right:  30px; }
-.pbh { padding-bottom: 30px; }
-.plh { padding-left:   30px; }
+/* ---------------------------------------------------------------------------------------------- */
+
+.-mts, .-mvs, .-mas { margin-top:     -5px; }
+.-mbs, .-mhs, .-mas { margin-bottom:  -5px; }
+.-mls, .-mvs, .-mas { margin-left:    -5px; }
+.-mrs, .-mhs, .-mas { margin-right:   -5px; }
+
+.-mtm, .-mvm, .-mam { margin-top:    -10px; }
+.-mrm, .-mhm, .-mam { margin-right:  -10px; }
+.-mbm, .-mvm, .-mam { margin-bottom: -10px; }
+.-mlm, .-mhm, .-mam { margin-left:   -10px; }
+
+.-mtl, .-mvl, .-mal { margin-top:    -20px; }
+.-mrl, .-mhl, .-mal { margin-right:  -20px; }
+.-mbl, .-mvl, .-mal { margin-bottom: -20px; }
+.-mll, .-mhl, .-mal { margin-left:   -20px; }
+
+.-mth, .-mvh, .-mah { margin-top:    -30px; }
+.-mrh, .-mhh, .-mah { margin-right:  -30px; }
+.-mbh, .-mvh, .-mah { margin-bottom: -30px; }
+.-mlh, .-mhh, .-mah { margin-left:   -30px; }
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.ptn, .pvn, .pan { padding-top:    0; }
+.prn, .phn, .pan { padding-right:  0; }
+.pbn, .pvn, .pan { padding-bottom: 0; }
+.pln, .phn, .pan { padding-left:   0; }
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.pts, .pvs, .pas { padding-top:     5px; }
+.prs, .phs, .pas { padding-right:   5px; }
+.pbs, .pvs, .pas { padding-bottom:  5px; }
+.pls, .phs, .pas { padding-left:    5px; }
+
+.ptm, .pvm, .pam { padding-top:    10px; }
+.prm, .phm, .pam { padding-right:  10px; }
+.pbm, .pvm, .pam { padding-bottom: 10px; }
+.plm, .phm, .pam { padding-left:   10px; }
+
+.ptl, .pvl, .pal { padding-top:    20px; }
+.prl, .phl, .pal { padding-right:  20px; }
+.pbl, .pvl, .pal { padding-bottom: 20px; }
+.pll, .phl, .pal { padding-left:   20px; }
+
+.pth, .pvh, .pah { padding-top:    30px; }
+.prh, .phh, .pah { padding-right:  30px; }
+.pbh, .pvh, .pah { padding-bottom: 30px; }
+.plh, .phh, .pah { padding-left:   30px; }
+
+/* ---------------------------------------------------------------------------------------------- */

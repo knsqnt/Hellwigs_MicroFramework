@@ -121,105 +121,85 @@
 @large:  20px;
 @huge:   30px;
 
-.man { margin:        @none; }
-.mhn { margin-right:  @none;
-       margin-left:   @none; }
-.mvn { margin-top:    @none;
-       margin-bottom: @none; }
-.mtn { margin-top:    @none; }
-.mbn { margin-bottom: @none; }
-.mrn { margin-right:  @none; }
-.mbn { margin-bottom: @none; }
-.mln { margin-left:   @none; }
+/* ---------------------------------------------------------------------------------------------- */
 
-.mas { margin:        @small; }
-.mhs { margin-right:  @small;
-       margin-left:   @small; }
-.mvs { margin-top:    @small;
-       margin-bottom: @small; }
-.mts { margin-top:    @small; }
-.mbs { margin-bottom: @small; }
-.mls { margin-left:   @small; }
-.mrs { margin-right:  @small; }
-
-.mam { margin:        @medium; }
-.mhm { margin-right:  @medium;
-       margin-left:   @medium; }
-.mvm { margin-top:    @medium;
-       margin-bottom: @medium; }
-.mtm { margin-top:    @medium; }
-.mrm { margin-right:  @medium; }
-.mbm { margin-bottom: @medium; }
-.mlm { margin-left:   @medium; }
-
-.mal { margin:        @large; }
-.mhl { margin-right:  @large;
-       margin-left:   @large; }
-.mvl { margin-top:    @large;
-       margin-bottom: @large; }
-.mtl { margin-top:    @large; }
-.mrl { margin-right:  @large; }
-.mbl { margin-bottom: @large; }
-.mll { margin-left:   @large; }
-
-.mah { margin:        @huge; }
-.mhh { margin-right:  @huge;
-       margin-left:   @huge; }
-.mvh { margin-top:    @huge;
-       margin-bottom: @huge; }
-.mth { margin-top:    @huge; }
-.mrh { margin-right:  @huge; }
-.mbh { margin-bottom: @huge; }
-.mlh { margin-left:   @huge; }
+.mtn, .mvn, .man { margin-top:    @none; }
+.mrn, .mhn, .man { margin-right:  @none; }
+.mbn, .mvn, .man { margin-bottom: @none; }
+.mln, .mhn, .man { margin-left:   @none; }
 
 /* ---------------------------------------------------------------------------------------------- */
 
-.pan { padding:        @none; }
-.phn { padding-right:  @none;
-       padding-left:   @none; }
-.pvn { padding-top:    @none;
-       padding-bottom: @none; }
-.ptn { padding-top:    @none; }
-.prn { padding-right:  @none; }
-.pbn { padding-bottom: @none; }
-.pln { padding-left:   @none; }
+.mts, .mvs, .mas { margin-top:    @small; }
+.mbs, .mhs, .mas { margin-bottom: @small; }
+.mls, .mvs, .mas { margin-left:   @small; }
+.mrs, .mhs, .mas { margin-right:  @small; }
 
-.pas { padding:        @small; }
-.phs { padding-right:  @small;
-       padding-left:   @small; }
-.pvs { padding-top:    @small;
-       padding-bottom: @small; }
-.pts { padding-top:    @small; }
-.prs { padding-right:  @small; }
-.pbs { padding-bottom: @small; }
-.pls { padding-left:   @small; }
+.mtm, .mvm, .mam { margin-top:    @medium; }
+.mrm, .mhm, .mam { margin-right:  @medium; }
+.mbm, .mvm, .mam { margin-bottom: @medium; }
+.mlm, .mhm, .mam { margin-left:   @medium; }
 
-.pam { padding:        @medium; }
-.phm { padding-right:  @medium;
-       padding-left:   @medium; }
-.pvm { padding-top:    @medium;
-       padding-bottom: @medium; }
-.ptm { padding-top:    @medium; }
-.prm { padding-right:  @medium; }
-.pbm { padding-bottom: @medium; }
-.plm { padding-left:   @medium; }
+.mtl, .mvl, .mal { margin-top:    @large; }
+.mrl, .mhl, .mal { margin-right:  @large; }
+.mbl, .mvl, .mal { margin-bottom: @large; }
+.mll, .mhl, .mal { margin-left:   @large; }
 
-.pal { padding:        @large; }
-.phl { padding-right:  @large;
-       padding-left:   @large; }
-.pvl { padding-top:    @large;
-       padding-bottom: @large; }
-.ptl { padding-top:    @large; }
-.prl { padding-right:  @large; }
-.pbl { padding-bottom: @large; }
-.pll { padding-left:   @large; }
+.mth, .mvh, .mah { margin-top:    @huge; }
+.mrh, .mhh, .mah { margin-right:  @huge; }
+.mbh, .mvh, .mah { margin-bottom: @huge; }
+.mlh, .mhh, .mah { margin-left:   @huge; }
 
-.pah { padding:        @huge; }
-.phh { padding-right:  @huge;
-       padding-left:   @huge; }
-.pvh { padding-top:    @huge;
-       padding-bottom: @huge; }
-.pth { padding-top:    @huge; }
-.prh { padding-right:  @huge; }
-.pbh { padding-bottom: @huge; }
-.plh { padding-left:   @huge; }
+/* ---------------------------------------------------------------------------------------------- */
+
+.-mts, .-mvs, .-mas { margin-top:    -@small; }
+.-mbs, .-mhs, .-mas { margin-bottom: -@small; }
+.-mls, .-mvs, .-mas { margin-left:   -@small; }
+.-mrs, .-mhs, .-mas { margin-right:  -@small; }
+
+.-mtm, .-mvm, .-mam { margin-top:    -@medium; }
+.-mrm, .-mhm, .-mam { margin-right:  -@medium; }
+.-mbm, .-mvm, .-mam { margin-bottom: -@medium; }
+.-mlm, .-mhm, .-mam { margin-left:   -@medium; }
+
+.-mtl, .-mvl, .-mal { margin-top:    -@large; }
+.-mrl, .-mhl, .-mal { margin-right:  -@large; }
+.-mbl, .-mvl, .-mal { margin-bottom: -@large; }
+.-mll, .-mhl, .-mal { margin-left:   -@large; }
+
+.-mth, .-mvh, .-mah { margin-top:    -@huge; }
+.-mrh, .-mhh, .-mah { margin-right:  -@huge; }
+.-mbh, .-mvh, .-mah { margin-bottom: -@huge; }
+.-mlh, .-mhh, .-mah { margin-left:   -@huge; }
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.ptn, .pvn, .pan { padding-top:    @none; }
+.prn, .phn, .pan { padding-right:  @none; }
+.pbn, .pvn, .pan { padding-bottom: @none; }
+.pln, .phn, .pan { padding-left:   @none; }
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.pts, .pvs, .pas { padding-top:    @small; }
+.prs, .phs, .pas { padding-right:  @small; }
+.pbs, .pvs, .pas { padding-bottom: @small; }
+.pls, .phs, .pas { padding-left:   @small; }
+
+.ptm, .pvm, .pam { padding-top:    @medium; }
+.prm, .phm, .pam { padding-right:  @medium; }
+.pbm, .pvm, .pam { padding-bottom: @medium; }
+.plm, .phm, .pam { padding-left:   @medium; }
+
+.ptl, .pvl, .pal { padding-top:    @large; }
+.prl, .phl, .pal { padding-right:  @large; }
+.pbl, .pvl, .pal { padding-bottom: @large; }
+.pll, .phl, .pal { padding-left:   @large; }
+
+.pth, .pvh, .pah { padding-top:    @huge; }
+.prh, .phh, .pah { padding-right:  @huge; }
+.pbh, .pvh, .pah { padding-bottom: @huge; }
+.plh, .phh, .pah { padding-left:   @huge; }
+
+/* ---------------------------------------------------------------------------------------------- */
+
