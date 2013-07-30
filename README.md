@@ -1,9 +1,7 @@
 hellwigs_MicroFramework
 =======================
 
-Simple, but yet powerful CSS code for setting up fluid layouts.
-
-Also usable for quick prototyping.
+Simple, but yet powerful CSS code for setting up fluid layouts and also usable for quick prototyping.
 
 ## Author
 
