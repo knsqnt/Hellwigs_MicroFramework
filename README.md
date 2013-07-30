@@ -1,4 +1,4 @@
-hellwigs_MicroFramework
+Hellwigs_MicroFramework
 =======================
 
 Simple, but yet powerful CSS code for setting up fluid layouts and also usable for quick prototyping.
